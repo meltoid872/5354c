@@ -1,0 +1,22 @@
+name: WarpPlugin
+version: 1.0
+main: com.example.warpplugin.Main
+description: A simple plugin for creating and teleporting to custom warps.
+author: 5354c
+api-version: 1.19
+
+commands:
+  setwarp:
+    description: Set a new warp at your current location.
+    usage: /setwarp <warp_name>
+  warp:
+    description: Teleport to an existing warp.
+    usage: /warp <warp_name>
+
+permissions:
+  warpplugin.setwarp:
+    description: Allows players to set warps.
+    default: op
+  warpplugin.warp:
+    description: Allows players to teleport to warps.
+    default: true
